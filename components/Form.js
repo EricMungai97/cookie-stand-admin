@@ -18,30 +18,31 @@ function Form() {
   return (
     <div className=''>
 
-      <form onSubmit={inputHandler} className="bg-gray-400 rounded border-2 border-gray-400 justify-center mt-10 p-5 mr-20 ml-20 ">
+      <form onSubmit={inputHandler} className="bg-violet-400 rounded border-2 text-white border-violet-400 justify-center mt-10 p-5 mr-20 ml-20 ">
         <div>
         <h2 className='text-2xl font-sans-bold flex justify-center'>Create Cookie Stand</h2>
         </div>
         <fieldset>
         <label className='p-2' htmlFor="location">Location</label>
-        <input name="location" />
+        <input className="text-black" name="location" />
         </fieldset>
         <div className='flex'>
         <fieldset className="flex-grow" >
         <legend className='flex flex-col'>Minimum Customers per Hour</legend>
-        <input name="minCust" />
+        <input className="text-black" name="minCust" />
         </fieldset>
         <fieldset className='flex-grow'>
         <legend>Maximum Customers per Hour</legend>
-        <input name="maxCust" />
+        <input className="text-black" name="maxCust" />
         </fieldset>
         <fieldset className='flex-grow'>
         <legend>Average Cookie per Sale</legend>
-        <input name="avgCookies" />
+        <input className="text-black" name="avgCookies" />
 
         </fieldset>
+        <button className="bg-cyan-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 mt-4">Create</button>
         </div>
-        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 mt-4">Create</button>
+        
       </form>
       <div className='flex justify-center'>
       <p >Report Table Coming Soon...</p>
