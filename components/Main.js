@@ -1,7 +1,6 @@
-import React from 'react';
-import Form from './Form';
+import Form from './CreateForm';
 
-function Main() {
+export default function Main() {
   return (
     <div >
       <Form />
@@ -11,4 +10,3 @@ function Main() {
   );
 }
 
-export default Main;
