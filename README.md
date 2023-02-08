@@ -2,6 +2,8 @@
 
 ## Project: cookie-stand-admin
 
+## Version 1.0.2
+
 ## Author: Eric Mungai Kinuthia
 
 ## About
