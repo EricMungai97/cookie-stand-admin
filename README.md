@@ -20,7 +20,17 @@ Project that utilizes NEXT JS framework to render information for different cook
 
 ## Setup
 
-`PORT-3000`
+Clone the repository to your local machine :
+
+`git clone https://github.com/EricMungai97/cookie-stand-admin.git`
+
+Navigate to your cloned repository:
+
+`cd cookie-stand-admin`
+
+Install required dependencies:
+
+`npm install`
 
 ## How to run application
 

@@ -6,13 +6,13 @@ export default function ReportTable(props) {
     <table className="w-11/12 my-4 mr-20 ml-20 ">
       <thead>
         <tr className='bg-violet-400 rounded-lg border-2' >
-          <th className="pl-2 rounded border-2 border-violet-400">Location</th>
+          <th className="pl-2 rounded border-2 border-violet-400 text-white">Location</th>
           {hours.map((hour, idx) => {
             return (
-              <th key={idx} className="pl-2 rounded-lg border-2 border-violet-400">{hour}</th>
+              <th key={idx} className="pl-2 rounded-lg border-2 border-violet-400 text-white">{hour}</th>
             );
           })}
-          <th className="pl-2 rounded-lg border-2 border-violet-400">Totals</th>
+          <th className="pl-2 rounded-lg border-2 border-violet-400 text-white">Totals</th>
         </tr>
       </thead>
       <tbody>
@@ -24,7 +24,7 @@ export default function ReportTable(props) {
               <td className="pl-2 border border-gray-400">{city}</td>
               {values.map((value, idx) => {
                 return (
-                  <td key="idx" className="pl-2 border border-gray-400">{value}</td>
+                  <td key="idx" className="pl-2 border border-gray-400 text-purple-900">{value}</td>
                 );
               })}
             </tr>
