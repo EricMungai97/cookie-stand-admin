@@ -3,19 +3,20 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Main from '@/components/Main';
+import LoginForm from '../components/LoginForm';
+import { useAuth } from '../pages/contexts/auth';
+import CookieStandAdmin from '@/components/CookieStandAdmin';
+
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { user, login } = useAuth();
   return (
     <div className='bg-fuchsia-100 h-screen w-screen'>
-      <Head/>
-      <Header/>
-      <Main />
-      <Footer />
-    </div>
+      <Head />
+      <Header />
+      {user ?<CookieStandAdmin />:<LoginForm onLogin={login} />}</div>
   )
 }
