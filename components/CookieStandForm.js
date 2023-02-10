@@ -11,7 +11,7 @@ export default function Form() {
 
   function inputHandler(e) {
     e.preventDefault();
-    const cookieStand = {
+    const info = {
       location: parseInt(e.target.location.value),
       minimum_customers_per_hour: parseInt(e.target.minCust.value),
       maximum_customers_per_hour: parseInt(e.target.maxCust.value),
@@ -19,7 +19,7 @@ export default function Form() {
       owner: user.id,
     };
 
-    createResource(cookieStand);
+    createResource(info);
 
 
   }
