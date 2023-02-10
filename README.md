@@ -1,8 +1,8 @@
-# LAB - Class 37
+# LAB - Class 39
 
 ## Project: cookie-stand-admin
 
-## Version 1.0.2
+## Version 1.0.3
 
 ## Author: Eric Mungai Kinuthia
 
@@ -11,6 +11,8 @@
 Project that utilizes NEXT JS framework to render information for different cookie stands,
 
 ## Links and Resources
+
+[Link to Backend Repo]()
 
 [Next JS](https://nextjs.org/)
 
@@ -32,7 +34,22 @@ Install required dependencies:
 
 `npm install`
 
+clone backend repo
+
+create and activate virtual environment:
+
+`python3.11 -m venv .venv`
+
+`source .venv/bin/activate`
+
+install requirements:
+
+`pip install -r`
+
+
 ## How to run application
+
+**Front end**
 
 ```bash
 npm run dev
@@ -41,6 +58,10 @@ yarn dev
 # or
 pnpm dev
 ```
+
+**Backend**
+
+`python manage.py runserver`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
