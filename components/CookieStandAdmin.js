@@ -1,4 +1,5 @@
-import Form from './CreateForm';
+import Form from './CookieStandForm';
+import useResource from '../hooks/useResource';
 
 export default function Main() {
   return (
