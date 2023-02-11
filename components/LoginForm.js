@@ -1,9 +1,12 @@
+import Header from "./Header";
 export default function LoginForm({ onLogin }) {
     async function handleSubmit(event) {
         event.preventDefault();
         onLogin(event.target.username.value, event.target.password.value);
     }
     return (
+        <>
+        <Header />
         <form
         onSubmit={handleSubmit}
         className="w-1/2 p-8 mx-auto my-16 text-center bg-violet-200 rounded-md"
@@ -26,5 +29,6 @@ export default function LoginForm({ onLogin }) {
           Sign In
         </button>
         </form>
+        </>
     );
   }

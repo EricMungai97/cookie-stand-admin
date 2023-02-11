@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import LoginForm from '../components/LoginForm';
 import { useAuth } from '../pages/contexts/auth';
 import CookieStandAdmin from '@/components/CookieStandAdmin';
+import useResource from '@/hooks/useResource';
 
 
 
@@ -13,10 +14,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const { user, login } = useAuth();
+
+  const { resources, deleteResource } = useResource();
+  console.log(user)
+  // console.log(useResource())
+
   return (
     <div className='bg-fuchsia-100 h-screen w-screen'>
       <Head />
-      <Header />
-      {user ?<CookieStandAdmin />:<LoginForm onLogin={login} />}</div>
+      {user ?<CookieStandAdmin resources={resources} deleteResource={deleteResource} user={user} />:<LoginForm onLogin={login} />}</div>
   )
 }
