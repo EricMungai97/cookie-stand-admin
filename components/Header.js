@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useAuth } from '../pages/contexts/auth';
+import { useAuth } from '../contexts/auth';
 export default function Header() {
   const { user, logout } = useAuth();
   return (

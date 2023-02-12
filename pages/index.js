@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header';
 import LoginForm from '../components/LoginForm';
-import { useAuth } from '../pages/contexts/auth';
+import { useAuth } from '../contexts/auth';
 import CookieStandAdmin from '@/components/CookieStandAdmin';
 import useResource from '@/hooks/useResource';
 

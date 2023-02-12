@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuth } from '../pages/contexts/auth';
+import { useAuth } from '../contexts/auth';
 import useResource from '../hooks/useResource';
 
 
