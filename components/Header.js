@@ -8,7 +8,7 @@ export default function Header() {
   <div className="flex">
     {user && (
       <>
-      <h2 className="rounded-lg border-2 bg-violet-300 p-1 mr-4" >{user.username}</h2>
+      <h2 className="text-sm rounded border-0 bg-violet-300 p-1 mr-4" >{user.username}</h2>
       <a href=" " className="rounded-lg border-2 bg-violet-400 p-1 mr-4" onClick={logout}>
         Sign Out
       </a>
