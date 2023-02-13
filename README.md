@@ -12,7 +12,7 @@ Project that utilizes NEXT JS framework to render information for different cook
 
 ## Links and Resources
 
-[Deployed Server](https://cookie-stand-admin-323w19zes-ericmungai97.vercel.app/)
+[Deployed App](https://cookie-stand-admin-323w19zes-ericmungai97.vercel.app/)
 
 [Link to Backend Repo]()
 
