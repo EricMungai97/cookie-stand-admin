@@ -10,6 +10,10 @@
 
 Project that utilizes NEXT JS framework to render information for different cookie stands,
 
+To test deployed site:
+username: ericmungai
+password: 1234
+
 ## Links and Resources
 
 [Deployed App](https://cookie-stand-admin-323w19zes-ericmungai97.vercel.app/)
